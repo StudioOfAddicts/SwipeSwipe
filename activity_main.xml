@@ -7,31 +7,37 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="addictsstudio.swingswing.MainActivity">
+    tools:context="addictsstudio.tryshakeanim.MainActivity">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/SwingSwing"
-        android:id="@+id/hiscr"
+        android:text="Hello World!"
+        android:id="@+id/textView" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView"
+        android:src="@drawable/y"
+        android:layout_alignParentBottom="true"
         android:layout_alignParentEnd="true"
-        android:layout_alignStart="@+id/buttonStart" />
+        android:layout_marginBottom="116dp"
+        android:contentDescription="@string/app_name"
+        android:focusable="false"
+        android:cropToPadding="true"
+        android:baselineAlignBottom="false" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/textStart"
-        android:id="@+id/buttonStart"
-        android:layout_centerVertical="true"
-        android:layout_centerHorizontal="true"
-        android:onClick="onClickStart" />
+        android:text="New Button"
+        android:id="@+id/button"
+        android:background="@drawable/button_custom"
+        android:layout_marginTop="322dp"
+        android:layout_below="@+id/textView"
+        android:layout_alignParentStart="true"
+        android:singleLine="false"
+        android:onClick="onShakeImage" />
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/textSettings"
-        android:id="@+id/buttonSettings"
-        android:layout_below="@+id/buttonStart"
-        android:layout_alignStart="@+id/buttonStart"
-        android:layout_marginTop="40dp" />
 </RelativeLayout>
