@@ -1,6 +1,40 @@
 <?xml version="1.0" encoding="utf-8"?>
 <selector xmlns:android="http://schemas.android.com/apk/res/android">
-    <item android:drawable="@drawable/button_pressed"
-        android:state_pressed="true"/>
-    <item android:drawable="@drawable/button_anim"/>
+    <item android:state_pressed="true">
+        <bitmap android:src="@drawable/button_pressed"/>
+    </item>
+    <item android:state_window_focused="true">
+        <animation-list android:visible="true" android:oneshot="false">
+            <item android:drawable="@drawable/button_anim01" android:duration="33" />
+            <item android:drawable="@drawable/button_anim02" android:duration="33" />
+            <item android:drawable="@drawable/button_anim03" android:duration="33" />
+            <item android:drawable="@drawable/button_anim04" android:duration="33" />
+            <item android:drawable="@drawable/button_anim05" android:duration="33" />
+            <item android:drawable="@drawable/button_anim06" android:duration="33" />
+            <item android:drawable="@drawable/button_anim07" android:duration="33" />
+            <item android:drawable="@drawable/button_anim08" android:duration="33" />
+            <item android:drawable="@drawable/button_anim09" android:duration="33" />
+            <item android:drawable="@drawable/button_anim10" android:duration="33" />
+            <item android:drawable="@drawable/button_anim11" android:duration="33" />
+            <item android:drawable="@drawable/button_anim12" android:duration="33" />
+            <item android:drawable="@drawable/button_anim13" android:duration="33" />
+            <item android:drawable="@drawable/button_anim14" android:duration="33" />
+            <item android:drawable="@drawable/button_anim15" android:duration="33" />
+            <item android:drawable="@drawable/button_anim16" android:duration="33" />
+            <item android:drawable="@drawable/button_anim17" android:duration="33" />
+            <item android:drawable="@drawable/button_anim18" android:duration="33" />
+            <item android:drawable="@drawable/button_anim19" android:duration="33" />
+            <item android:drawable="@drawable/button_anim20" android:duration="33" />
+            <item android:drawable="@drawable/button_anim21" android:duration="33" />
+            <item android:drawable="@drawable/button_anim22" android:duration="33" />
+            <item android:drawable="@drawable/button_anim23" android:duration="33" />
+            <item android:drawable="@drawable/button_anim24" android:duration="33" />
+            <item android:drawable="@drawable/button_anim25" android:duration="33" />
+            <item android:drawable="@drawable/button_anim26" android:duration="33" />
+            <item android:drawable="@drawable/button_anim27" android:duration="33" />
+            <item android:drawable="@drawable/button_anim28" android:duration="33" />
+            <item android:drawable="@drawable/button_anim29" android:duration="33" />
+            <item android:drawable="@drawable/button_normal" android:duration="1000" />
+        </animation-list>
+    </item>
 </selector>
